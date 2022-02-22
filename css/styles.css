@@ -1,0 +1,112 @@
+.container{
+    max-width: 1092px;
+    min-height: 400px;
+   
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+header{
+    max-width: 1092px;
+    min-height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+.col{
+    width: 30%;
+    min-height: 100px;
+      background-color: rgb(129, 112, 5);
+    margin-bottom: 40px;
+}
+
+.burger-container{
+    display: none;
+}
+
+
+@media (max-width:786px){
+    .col{
+        width: 45%;
+    }
+
+    nav a{
+        display: block;
+    }
+
+    header{
+        display: flex;
+        text-align: center;
+    }
+    .logo{
+        padding: 15px 0;
+    }
+    nav{
+        display: none;
+    }
+    .burger-icon{
+        width: 40px;
+        margin-right: 20px;
+    }
+    .burger-container{
+        display: block;
+    }
+    
+    .burger-menu a{
+        display: block;
+        padding: 12px 25px;
+        color: white;
+        text-decoration: none;
+    }
+    .burger-menu{
+        position: absolute;
+        background-color: rgb(255, 153, 0);
+        margin-left: -70px;
+        margin-top: 30px;
+        display: none;
+    }
+    
+}
+   
+@media (max-width:500px){
+    .col{
+        width: 100%;
+    }
+}
+.col img{
+    width: 100%;
+
+}
+.col p{
+   pad: 10px 20px;
+   text-align: center;
+}
+body{
+    color: white;
+    margin: 0;
+}
+.col p::first-line{
+    font-weight: bold;
+}
+.topcontainer{
+    width: 100%;
+    min-height: 80px;
+    background-color: darkgray;
+    margin-bottom: 40px;
+    position: fixed;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    border: solid 1px white;
+    padding: 7px 13px;
+}
+.bolded{
+    font-weight: bold;
+}
